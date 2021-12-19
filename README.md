@@ -3,11 +3,19 @@
 [![License](https://img.shields.io/badge/license-MIT-007EC7)](/LICENSE)
 [![built for](https://img.shields.io/badge/built%20for-%20%F0%9F%A6%93%20zshzoo-black)][zshzoo]
 
-> Use pbcopy/pbpaste commands everywhere, not just on MacOS
+> Clipboard utilities
 
 ## Description
 
-This plugin brings equivalent MacOS `pbcopy`/`pbpaste` commands to other \*nix OSes.
+[Oh-My-Zsh](https://github.com/ohmyzsh/ohmyzsh) clipboard utilites as a plugin.
+
+| command    | description                                                  |
+| ---------- | ------------------------------------------------------------ |
+| clipcopy   | Copy from the command line                                   |
+| clippaste  | Paste to the command line                                    |
+| copydir    | Copy the path of the current directory to the clipboard      |
+| copyfile   | Copy the contents of a file to the clipboard                 |
+| copybuffer | Copy the current command buffer to the clipboard with CTRL-o |
 
 ## Installation
 
