@@ -1,4 +1,4 @@
-# pasteboard
+# copier
 
 [![License](https://img.shields.io/badge/license-MIT-007EC7)](/LICENSE)
 [![built for](https://img.shields.io/badge/built%20for-%20%F0%9F%A6%93%20zshzoo-black)][zshzoo]
@@ -15,23 +15,23 @@ This plugin brings equivalent MacOS `pbcopy`/`pbpaste` commands to other \*nix O
 
 To install using a Zsh plugin manager, add the following to your .zshrc
 
-- [pz]: `pz source zshzoo/pasteboard`
-- [zcomet]: `zcomet load zshzoo/pasteboard`
-- [zgenom]: `zgenom load zshzoo/pasteboard`
-- [znap]: `znap source zshzoo/pasteboard`
+- [pz]: `pz source zshzoo/copier`
+- [zcomet]: `zcomet load zshzoo/copier`
+- [zgenom]: `zgenom load zshzoo/copier`
+- [znap]: `znap source zshzoo/copier`
 
 ### Install manually, without a plugin manager
 
 To install manually, first clone the repo:
 
 ```zsh
-git clone https://github.com/zshzoo/pasteboard ${ZDOTDIR:-~}/.zplugins/pasteboard
+git clone https://github.com/zshzoo/copier ${ZDOTDIR:-~}/.zplugins/copier
 ```
 
 Then, in your .zshrc, add the following line:
 
 ```zsh
-source ${ZDOTDIR:-~}/.zplugins/pasteboard/pasteboard.zsh
+source ${ZDOTDIR:-~}/.zplugins/copier/copier.zsh
 ```
 
 [zshzoo]: https://github.com/zshzoo/zshzoo
