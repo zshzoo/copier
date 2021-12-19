@@ -1,4 +1,0 @@
-function _hello() {
-  echo "hello ${1:-world}"
-}
-_hello $@

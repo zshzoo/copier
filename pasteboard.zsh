@@ -1,14 +1,21 @@
-# add your plugin code here... you can delete everything
-# in this file and write your thing
-echo "pasteboard"
-
-# if this project has a functions dir, this block shows how to autoload
-# it is safe to remove this if you don't want/need it
-if [[ -d ${0:A:h}/functions ]]; then
-  fpath+=${0:A:h}/functions
-  for _fn in ${0:A:h}/functions/*(.N); do
-    # unfunction "${_fn:t}" &>/dev/null
-    autoload -Uz $_fn
-  done
-  unset _fn
+# https://github.com/sorin-ionescu/prezto/blob/515d70f639d76314801bbae7e5f1e20da8a76000/modules/utility/init.zsh#L139-L163
+if [[ "$OSTYPE" == darwin* ]]; then
+  # nothing to do, MacOS already has pbcopy/pbpaste
+elif [[ "$OSTYPE" == cygwin* ]]; then
+  alias pbcopy='tee > /dev/clipboard'
+  alias pbpaste='cat /dev/clipboard'
+elif [[ "$OSTYPE" == linux-android ]]; then
+  alias pbcopy='termux-clipboard-set'
+  alias pbpaste='termux-clipboard-get'
+else
+  if (( $+commands[xclip] )); then
+    alias pbcopy='xclip -selection clipboard -in'
+    alias pbpaste='xclip -selection clipboard -out'
+  elif (( $+commands[xsel] )); then
+    alias pbcopy='xsel --clipboard --input'
+    alias pbpaste='xsel --clipboard --output'
+  fi
 fi
+
+alias pbc='pbcopy'
+alias pbp='pbpaste'

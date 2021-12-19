@@ -3,7 +3,7 @@
 [![License](https://img.shields.io/badge/license-MIT-007EC7)](/LICENSE)
 [![built for](https://img.shields.io/badge/built%20for-%20%F0%9F%A6%93%20zshzoo-black)][zshzoo]
 
-> Use pbcopy/pbpaste commands everywhere, not just MacOS
+> Use pbcopy/pbpaste commands everywhere, not just on MacOS
 
 ## Description
 
