@@ -23,7 +23,7 @@
 
 To install using a Zsh plugin manager, add the following to your .zshrc
 
-- [pz]: `pz source zshzoo/copier`
+- [antidote]: `antidote bundle zshzoo/copier`
 - [zcomet]: `zcomet load zshzoo/copier`
 - [zgenom]: `zgenom load zshzoo/copier`
 - [znap]: `znap source zshzoo/copier`
@@ -43,7 +43,7 @@ source ${ZDOTDIR:-~}/.zplugins/copier/copier.zsh
 ```
 
 [zshzoo]: https://github.com/zshzoo/zshzoo
-[pz]: https://github.com/mattmc3/pz
+[antidote]: https://github.com/mattmc3/antidote
 [zcomet]: https://github.com/agkozak/zcomet
 [zgenom]: https://github.com/jandamm/zgenom
 [znap]: https://github.com/marlonrichert/zsh-snap
